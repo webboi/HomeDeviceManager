@@ -6,15 +6,18 @@
       <th>Device Status</th>
     </tr>
   </thead>
-  <tr *ngFor="let device of devices">
-    <td>
-      {{ device.deviceName }}
-    </td>
-    <td>
-      {{ device.type }}
-    </td>
-    <td>
-      {{ device.isOn ? "On" : "Off" }}
-    </td>
-  </tr>
+
+  <tbody>
+    <tr *ngFor="let device of devices">
+      <td>
+        {{ device.deviceName }}
+      </td>
+      <td>
+        {{ device.type }}
+      </td>
+      <td>
+        {{ device.isOn ? "On" : "Off" }}
+      </td>
+    </tr>
+  </tbody>
 </table>
